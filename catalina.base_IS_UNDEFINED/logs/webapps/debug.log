@@ -1,0 +1,127 @@
+2018-11-20 13:31:49:752[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr, phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES (?,?,?,?, ?,?,?,?,?, ?,?,?,?) 
+2018-11-20 13:31:49:787[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==> Parameters: 1(Long), 1(Integer), 1(Long), 测试名称(String), test(String), test(String), test(String), test(String), null, 2018-11-20 13:31:49.455(Timestamp), null, 1(Integer), 审核中(String)
+2018-11-20 13:33:06:925[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr, phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES (?,?,?,?, ?,?,?,?,?, ?,?,?,?) 
+2018-11-20 13:33:06:957[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==> Parameters: 1(Long), 1(Integer), 1(Long), 测试名称(String), test(String), test(String), test(String), test(String), null, 2018-11-20 13:33:06.624(Timestamp), null, 1(Integer), 审核中(String)
+2018-11-20 13:37:27:000[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr, phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES (?,?,?,?, ?,?,?,?,?, ?,?,?,?) 
+2018-11-20 13:37:27:033[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==> Parameters: 1(Long), 1(Integer), 1(Long), 测试名称(String), test(String), test(String), test(String), test(String), null, 2018-11-20 13:37:26.699(Timestamp), null, 1(Integer), 审核中(String)
+2018-11-20 13:42:22:640[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr, phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES (?,?,?,?, ?,?,?,?,?, ?,?,?,?) 
+2018-11-20 13:42:22:678[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==> Parameters: 1(Long), 1(Integer), 1(Long), 测试名称(String), test(String), test(String), test(String), test(String), 1(Integer), 2018-11-20 13:42:22.347(Timestamp), null, 1(Integer), 审核中(String)
+2018-11-20 13:50:16:093[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr, phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES (?,?,?,?, ?,?,?,?,?, ?,?,?,?) 
+2018-11-20 13:50:16:119[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==> Parameters: 1(Long), 1(Integer), 1(Long), 测试名称(String), test(String), test(String), test(String), test(String), 1(Integer), 2018-11-20 13:50:15.774(Timestamp), null, 1(Integer), 审核中(String)
+2018-11-20 13:50:35:497[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.AreaDao.queryArea-==>  Preparing: select area_id,area_name,priority,create_time,last_edit_time FROM tb_area ORDER BY priority DESC 
+2018-11-20 13:50:35:531[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.AreaDao.queryArea-==> Parameters: 
+2018-11-20 13:50:35:547[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.AreaDao.queryArea-<==      Total: 1
+2018-11-20 13:56:05:637[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr, phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES (?,?,?,?, ?,?,?,?,?, ?,?,?,?) 
+2018-11-20 13:56:05:668[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==> Parameters: 1(Long), 1(Integer), 1(Long), 测试名称(String), test(String), test(String), test(String), test(String), 1(Integer), 2018-11-20 13:56:05.33(Timestamp), null, 1(Integer), 审核中(String)
+2018-11-20 13:59:36:030[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr, phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES (?,?,?,?, ?,?,?,?,?, ?,?,?,?) 
+2018-11-20 13:59:36:062[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==> Parameters: 1(Long), 1(Integer), 1(Long), 测试名称(String), test(String), test(String), test(String), test(String), 1(Integer), 2018-11-20 13:59:35.707(Timestamp), null, 1(Integer), 审核中(String)
+2018-11-20 14:00:46:981[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr, phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES (?,?,?,?, ?,?,?,?,?, ?,?,?,?) 
+2018-11-20 14:00:47:017[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==> Parameters: 1(Long), 1(Integer), 1(Long), 测试名称(String), test(String), test(String), test(String), test(String), 1(Integer), 2018-11-20 14:00:46.681(Timestamp), null, 1(Integer), 审核中(String)
+2018-11-20 14:00:47:042[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-<==    Updates: 1
+2018-11-20 14:25:58:724[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.updateShop-==>  Preparing: update tb_shop SET shop_desc=?, shop_addr=?, last_edit_time=? where shop_id=? 
+2018-11-20 14:25:58:764[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.updateShop-==> Parameters: 测试描述(String), 测试地址(String), 2018-11-20 14:25:58.407(Timestamp), null
+2018-11-20 14:25:58:766[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.updateShop-<==    Updates: 0
+2018-11-20 14:25:58:771[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr, phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES (?,?,?,?, ?,?,?,?,?, ?,?,?,?) 
+2018-11-20 14:25:58:775[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==> Parameters: 1(Long), 1(Integer), 1(Long), 测试名称(String), test(String), test(String), test(String), test(String), 1(Integer), 2018-11-20 14:25:58.771(Timestamp), null, 1(Integer), 审核中(String)
+2018-11-20 14:25:58:863[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-<==    Updates: 1
+2018-11-20 17:20:01:853[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr, phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES (?,?,?,?, ?,?,?,?,?, ?,?,?,?) 
+2018-11-20 17:20:01:880[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==> Parameters: 1(Long), 1(Integer), 1(Long), 测试名称1(String), test1(String), test1(String), test(String), null, 1(Integer), 2018-11-20 17:20:01.816(Timestamp), 2018-11-20 17:20:01.816(Timestamp), 0(Integer), 审核中(String)
+2018-11-20 17:20:01:896[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-<==    Updates: 1
+2018-11-20 17:25:05:527[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr, phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES (?,?,?,?, ?,?,?,?,?, ?,?,?,?) 
+2018-11-20 17:25:05:554[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==> Parameters: 1(Long), 1(Integer), 1(Long), 测试名称1(String), test1(String), test1(String), test(String), null, 1(Integer), 2018-11-20 17:25:05.492(Timestamp), 2018-11-20 17:25:05.492(Timestamp), 0(Integer), 审核中(String)
+2018-11-20 17:25:05:571[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-<==    Updates: 1
+2018-11-20 17:25:05:576[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl-shopImg:D:\TMP\1024.jpg
+2018-11-20 17:26:30:679[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr, phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES (?,?,?,?, ?,?,?,?,?, ?,?,?,?) 
+2018-11-20 17:26:30:706[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==> Parameters: 1(Long), 1(Integer), 1(Long), 测试名称1(String), test1(String), test1(String), test(String), null, 1(Integer), 2018-11-20 17:26:30.652(Timestamp), 2018-11-20 17:26:30.652(Timestamp), 0(Integer), 审核中(String)
+2018-11-20 17:26:30:709[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-<==    Updates: 1
+2018-11-20 17:26:30:714[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl-shopImg:D:\TMP\1024.jpg
+2018-11-20 17:26:30:714[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl-shopImg not null:true
+2018-11-20 17:28:46:993[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr, phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES (?,?,?,?, ?,?,?,?,?, ?,?,?,?) 
+2018-11-20 17:28:47:022[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==> Parameters: 1(Long), 1(Integer), 1(Long), 测试名称1(String), test1(String), test1(String), test(String), null, 1(Integer), 2018-11-20 17:28:46.966(Timestamp), 2018-11-20 17:28:46.966(Timestamp), 0(Integer), 审核中(String)
+2018-11-20 17:28:47:025[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-<==    Updates: 1
+2018-11-20 17:28:47:030[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl-shopImg:D:\TMP\1024.jpg
+2018-11-20 17:28:47:030[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl-shopImg not null:true
+2018-11-20 17:31:23:397[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr, phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES (?,?,?,?, ?,?,?,?,?, ?,?,?,?) 
+2018-11-20 17:31:23:425[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==> Parameters: 1(Long), 1(Integer), 1(Long), 测试名称1(String), test1(String), test1(String), test(String), null, 1(Integer), 2018-11-20 17:31:23.362(Timestamp), 2018-11-20 17:31:23.362(Timestamp), 0(Integer), 审核中(String)
+2018-11-20 17:31:23:428[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-<==    Updates: 1
+2018-11-20 17:31:23:433[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl-shopImg:D:\TMP\1024.jpg
+2018-11-20 17:31:23:433[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl-shopImg not null:true
+2018-11-20 17:33:06:292[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr, phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES (?,?,?,?, ?,?,?,?,?, ?,?,?,?) 
+2018-11-20 17:33:06:319[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==> Parameters: 1(Long), 1(Integer), 1(Long), 测试名称1(String), test1(String), test1(String), test(String), null, 1(Integer), 2018-11-20 17:33:06.27(Timestamp), 2018-11-20 17:33:06.27(Timestamp), 0(Integer), 审核中(String)
+2018-11-20 17:33:06:322[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-<==    Updates: 1
+2018-11-20 17:33:06:327[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl-shopImg:D:\TMP\1024.jpg
+2018-11-20 17:33:06:327[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl-shopImg not null:true
+2018-11-20 17:33:06:327[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl--------addShopImg start not in-----
+2018-11-20 17:34:40:288[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr, phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES (?,?,?,?, ?,?,?,?,?, ?,?,?,?) 
+2018-11-20 17:34:40:316[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==> Parameters: 1(Long), 1(Integer), 1(Long), 测试名称1(String), test1(String), test1(String), test(String), null, 1(Integer), 2018-11-20 17:34:40.25(Timestamp), 2018-11-20 17:34:40.25(Timestamp), 0(Integer), 审核中(String)
+2018-11-20 17:34:40:318[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-<==    Updates: 1
+2018-11-20 17:34:40:323[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl-shopImg:D:\TMP\1024.jpg
+2018-11-20 17:34:40:323[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl-shopImg not null:true
+2018-11-20 17:34:40:323[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl--------addShopImg start not in-----
+2018-11-20 17:34:40:323[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl--------PathUtil getShopImagePath  in-----:9
+2018-11-20 17:35:45:711[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr, phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES (?,?,?,?, ?,?,?,?,?, ?,?,?,?) 
+2018-11-20 17:35:45:738[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==> Parameters: 1(Long), 1(Integer), 1(Long), 测试名称1(String), test1(String), test1(String), test(String), null, 1(Integer), 2018-11-20 17:35:45.688(Timestamp), 2018-11-20 17:35:45.688(Timestamp), 0(Integer), 审核中(String)
+2018-11-20 17:35:45:740[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-<==    Updates: 1
+2018-11-20 17:35:45:745[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl-shopImg:D:\TMP\1024.jpg
+2018-11-20 17:35:45:745[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl-shopImg not null:true
+2018-11-20 17:35:45:745[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl--------addShopImg start not in-----
+2018-11-20 17:35:45:745[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl--------PathUtil getShopImagePath  in-----:10
+2018-11-20 17:36:08:717[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr, phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES (?,?,?,?, ?,?,?,?,?, ?,?,?,?) 
+2018-11-20 17:36:08:748[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==> Parameters: 1(Long), 1(Integer), 1(Long), 测试名称1(String), test1(String), test1(String), test(String), null, 1(Integer), 2018-11-20 17:36:08.695(Timestamp), 2018-11-20 17:36:08.695(Timestamp), 0(Integer), 审核中(String)
+2018-11-20 17:36:08:749[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-<==    Updates: 1
+2018-11-20 17:36:08:754[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl-shopImg:D:\TMP\1024.jpg
+2018-11-20 17:36:08:754[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl-shopImg not null:true
+2018-11-20 17:36:08:754[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl--------addShopImg start not in-----
+2018-11-20 17:36:08:754[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl--------PathUtil getShopImagePath  in-----:11
+2018-11-20 17:40:11:039[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr, phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES (?,?,?,?, ?,?,?,?,?, ?,?,?,?) 
+2018-11-20 17:40:11:066[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==> Parameters: 1(Long), 1(Integer), 1(Long), 测试名称1(String), test1(String), test1(String), test(String), null, 1(Integer), 2018-11-20 17:40:11.014(Timestamp), 2018-11-20 17:40:11.014(Timestamp), 0(Integer), 审核中(String)
+2018-11-20 17:40:11:067[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-<==    Updates: 1
+2018-11-20 17:40:11:072[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl-shopImg:D:\TMP\1024.jpg
+2018-11-20 17:40:11:073[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl-shopImg not null:true
+2018-11-20 17:40:11:073[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl--------addShopImg start not in-----
+2018-11-20 17:40:11:073[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl--------PathUtil getShopImagePath  in-----:12
+2018-11-20 17:42:03:959[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr, phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES (?,?,?,?, ?,?,?,?,?, ?,?,?,?) 
+2018-11-20 17:42:03:984[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==> Parameters: 1(Long), 1(Integer), 1(Long), 测试名称1(String), test1(String), test1(String), test(String), null, 1(Integer), 2018-11-20 17:42:03.931(Timestamp), 2018-11-20 17:42:03.931(Timestamp), 0(Integer), 审核中(String)
+2018-11-20 17:42:03:997[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-<==    Updates: 1
+2018-11-20 17:42:04:008[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl-shopImg:D:\TMP\1024.jpg
+2018-11-20 17:42:04:008[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl-shopImg not null:true
+2018-11-20 17:42:04:008[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl--------addShopImg start not in-----
+2018-11-20 17:42:04:008[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl--------PathUtil getShopImagePath  in-----:13
+2018-11-20 17:42:04:009[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl-imagePath:D:\\tmp\13
+2018-11-20 17:42:58:920[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr, phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES (?,?,?,?, ?,?,?,?,?, ?,?,?,?) 
+2018-11-20 17:42:58:947[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==> Parameters: 1(Long), 1(Integer), 1(Long), 测试名称1(String), test1(String), test1(String), test(String), null, 1(Integer), 2018-11-20 17:42:58.9(Timestamp), 2018-11-20 17:42:58.9(Timestamp), 0(Integer), 审核中(String)
+2018-11-20 17:42:58:950[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-<==    Updates: 1
+2018-11-20 17:42:58:955[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl-shopImg:D:\TMP\1024.jpg
+2018-11-20 17:42:58:955[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl-shopImg not null:true
+2018-11-20 17:42:58:956[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl--------addShopImg start not in-----
+2018-11-20 17:42:58:956[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl--------PathUtil getShopImagePath  in-----:14
+2018-11-20 17:42:58:956[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl-imagePath:D:\\tmp\14
+2018-11-20 17:43:49:911[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr, phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES (?,?,?,?, ?,?,?,?,?, ?,?,?,?) 
+2018-11-20 17:43:49:937[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==> Parameters: 1(Long), 1(Integer), 1(Long), 测试名称1(String), test1(String), test1(String), test(String), null, 1(Integer), 2018-11-20 17:43:49.886(Timestamp), 2018-11-20 17:43:49.886(Timestamp), 0(Integer), 审核中(String)
+2018-11-20 17:43:49:983[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-<==    Updates: 1
+2018-11-20 17:43:50:002[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl-shopImg:D:\TMP\1024.jpg
+2018-11-20 17:43:50:002[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl-shopImg not null:true
+2018-11-20 17:43:50:002[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl--------addShopImg start not in-----
+2018-11-20 17:43:50:003[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl--------PathUtil getShopImagePath  in-----:15
+2018-11-20 17:43:50:004[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl-imagePath:D:\\tmp\15
+2018-11-20 17:43:50:005[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl-seperator:null
+2018-11-20 17:49:50:032[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr, phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES (?,?,?,?, ?,?,?,?,?, ?,?,?,?) 
+2018-11-20 17:49:50:059[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==> Parameters: 1(Long), 1(Integer), 1(Long), 测试名称1(String), test1(String), test1(String), test(String), null, 1(Integer), 2018-11-20 17:49:50.001(Timestamp), 2018-11-20 17:49:50.001(Timestamp), 0(Integer), 审核中(String)
+2018-11-20 17:49:50:061[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-<==    Updates: 1
+2018-11-20 17:49:50:066[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl-shopImg:D:\TMP\1024.jpg
+2018-11-20 17:49:50:066[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl-shopImg not null:true
+2018-11-20 17:49:50:066[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl--------addShopImg start not in-----
+2018-11-20 17:49:50:066[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl--------PathUtil getShopImagePath  in-----:16
+2018-11-20 17:49:50:066[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl-imagePath:D:\\tmp\16
+2018-11-20 17:49:50:067[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl-seperator:\
+2018-11-20 17:49:50:067[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl-dest:D:\\tmp\16
+2018-11-20 17:51:21:459[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr, phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES (?,?,?,?, ?,?,?,?,?, ?,?,?,?) 
+2018-11-20 17:51:21:485[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-==> Parameters: 1(Long), 1(Integer), 1(Long), 测试名称1(String), test1(String), test1(String), test(String), null, 1(Integer), 2018-11-20 17:51:21.436(Timestamp), 2018-11-20 17:51:21.436(Timestamp), 0(Integer), 审核中(String)
+2018-11-20 17:51:21:487[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.dao.ShopDao.insertShop-<==    Updates: 1
+2018-11-20 17:51:21:492[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl-shopImg:D:\TMP\1024.jpg
+2018-11-20 17:51:21:492[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl-shopImg not null:true
+2018-11-20 17:51:21:492[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl--------addShopImg start not in-----
+2018-11-20 17:51:21:492[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl--------PathUtil getShopImagePath  in-----:17
+2018-11-20 17:51:21:493[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl-imagePath:D:/tmp/image17
+2018-11-20 17:51:21:493[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl-seperator:\
+2018-11-20 17:51:21:493[%PARSER_ERROR[thead]]DEBUGcom.imooc.o2o.service.impl.ShopServiceImpl-dest:D:\tmp\image17
