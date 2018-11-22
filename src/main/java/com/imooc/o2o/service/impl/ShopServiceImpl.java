@@ -1,6 +1,6 @@
 package com.imooc.o2o.service.impl;
 
-import java.io.File;
+import java.io.InputStream;
 import java.util.Date;
 
 import org.slf4j.Logger;
@@ -27,7 +27,7 @@ public class ShopServiceImpl implements ShopService {
 
 	@Override
 	@Transactional
-	public ShopExecution addShop(Shop shop, File shopImg) {
+	public ShopExecution addShop(Shop shop, InputStream shopImgInputStream, String fileName) {
 		if (shop == null) {
 			return new ShopExecution(ShopStateEnum.NULL_SHOP);
 		}
@@ -40,10 +40,11 @@ public class ShopServiceImpl implements ShopService {
 			// 添加一条信息
 			int effectedNum = shopDao.insertShop(shop);
 			if (effectedNum <= 0) {
+				logger.error("店铺创建失败!");
 				throw new ShopOperationException("店铺创建失败");
 			} else {
-				logger.debug("shopImg:" + shopImg.toString());
-				if (shopImg != null) {
+				logger.debug("shopImg:" + shopImgInputStream.toString());
+				if (shopImgInputStream != null) {
 					;
 					/*
 					 * logger.debug("shopImg not null:" + (shopImg != null)); // 存储图片 try {
@@ -64,12 +65,12 @@ public class ShopServiceImpl implements ShopService {
 		return new ShopExecution(ShopStateEnum.CHECK, shop);
 	}
 
-	private void addShopImg(Shop shop, File shopImg) {
+	private void addShopImg(Shop shop, InputStream shopImgInputStream, String fileName) {
 		logger.debug("-------PathUtil getShopImagePath  in-----:" + shop.getShopId());
 		// 获取shop图片目录的相对值路径
 		String dest = PathUtil.getShopImagePath(shop.getShopId());
 		logger.debug("dest:" + dest);
-		String shopImgAddr = ImageUtil.generateThumbnail(shopImg, dest);
+		String shopImgAddr = ImageUtil.generateThumbnail(shopImgInputStream, fileName, dest);
 		logger.debug("shopImgAddr:" + shopImgAddr);
 		shop.setShopImg(shopImgAddr);
 

@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 import java.util.Date;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,15 +16,13 @@ import com.imooc.o2o.enerty.PersonInfo;
 import com.imooc.o2o.enerty.Shop;
 import com.imooc.o2o.enerty.ShopCategory;
 
-import jdk.nashorn.internal.ir.annotations.Ignore;
-
 public class ShopDaoTest extends BaseTest {
 	@Autowired
 	private ShopDao shopDao;
 	Logger logger = LoggerFactory.getLogger(ShopDaoTest.class);
 
 	@Test
-	@Ignore
+	// @Ignore
 	public void testInsertShop() {
 
 		Shop shop = new Shop();
@@ -63,6 +62,7 @@ public class ShopDaoTest extends BaseTest {
 	}
 
 	@Test
+	@Ignore
 	public void updateShop() {
 
 		Shop shop = new Shop();

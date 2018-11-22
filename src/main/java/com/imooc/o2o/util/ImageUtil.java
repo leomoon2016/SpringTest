@@ -2,6 +2,7 @@ package com.imooc.o2o.util;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Random;
@@ -10,7 +11,6 @@ import javax.imageio.ImageIO;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.web.multipart.MultipartFile;
 
 import net.coobird.thumbnailator.Thumbnails;
 import net.coobird.thumbnailator.geometry.Positions;
@@ -23,12 +23,12 @@ public class ImageUtil {
 
 	// Logger logger = LoggerFactory.getLogger(ImageUtil.class);
 
-	public static String generateThumbnail(File thumbnail, String targetAddr) {
+	public static String generateThumbnail(InputStream thumbnailInputStream, String fileName, String targetAddr) {
 		Logger logger = LoggerFactory.getLogger(ImageUtil.class);
 		// 随机名
 		String realFileName = getRandomFileName();
 		// 扩展名
-		String extension = getFileExtension(thumbnail);
+		String extension = getFileExtension(fileName);
 		// 生成路径
 		makeDirPath(targetAddr);
 		// 相对路径
@@ -41,7 +41,7 @@ public class ImageUtil {
 		logger.debug("completeAddr：" + PathUtil.getImageBasePath() + relativeAddr);
 
 		try {
-			Thumbnails.of(((MultipartFile) thumbnail).getInputStream()).size(200, 200)
+			Thumbnails.of(thumbnailInputStream).size(200, 200)
 					.watermark(Positions.BOTTOM_RIGHT, ImageIO.read(new File(basePath + "/watermark.jpg")), 0.25f)
 					.outputQuality(0.8f).toFile(dest);
 		} catch (IOException e) {
@@ -71,9 +71,9 @@ public class ImageUtil {
 	 * @param thumbnail
 	 * @return
 	 */
-	private static String getFileExtension(File cFile) {
-		String originalFileName = ((MultipartFile) cFile).getOriginalFilename();
-		return originalFileName.substring(originalFileName.lastIndexOf("."));
+	private static String getFileExtension(String fileName) {
+
+		return fileName.substring(fileName.lastIndexOf("."));
 	}
 
 	/**
@@ -81,7 +81,7 @@ public class ImageUtil {
 	 * 
 	 * @return
 	 */
-	private static String getRandomFileName() {
+	public static String getRandomFileName() {
 		int rannum = r.nextInt(89999) + 10000;
 		String nowTimeStr = sDateFormat.format(new Date());
 		return nowTimeStr + rannum;
