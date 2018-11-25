@@ -2,9 +2,10 @@
  * 1、获取表单list 2、提交数据
  */
 $(function() {
-	var initUrl = 'ManvenWeb/shopadmin/getshopinitinfo';
-	var registerShopUrl = 'ManvenWeb/shopadmin/registershop';
-	alert(initUrl);
+	var initUrl = 'o2o/shopadmin/getshopinitinfo';
+	var registerShopUrl = 'o2o/shopadmin/registershop';
+	var shopInfoUrl = 'o2o/shopadmin/getshopbyid?shopId='+shopId;
+
 	getShopInitShop();
 	
 	function getShopInitShop() {

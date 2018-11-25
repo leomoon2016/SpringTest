@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.imooc.o2o.enerty.Area;
+import com.imooc.o2o.entity.Area;
 import com.imooc.o2o.service.AreaService;
 
 @Controller

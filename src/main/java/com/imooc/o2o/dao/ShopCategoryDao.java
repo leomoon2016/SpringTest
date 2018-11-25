@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.Param;
 
-import com.imooc.o2o.enerty.ShopCategory;
+import com.imooc.o2o.entity.ShopCategory;
 
 public interface ShopCategoryDao {
 	List<ShopCategory> queryShopCategory(@Param("shopCategoryCondition") ShopCategory shopCategoryCondition);

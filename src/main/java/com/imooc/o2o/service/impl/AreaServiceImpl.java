@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.imooc.o2o.dao.AreaDao;
-import com.imooc.o2o.enerty.Area;
+import com.imooc.o2o.entity.Area;
 import com.imooc.o2o.service.AreaService;
 
 @Service

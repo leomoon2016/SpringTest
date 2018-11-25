@@ -11,7 +11,6 @@ import javax.imageio.ImageIO;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import net.coobird.thumbnailator.Thumbnails;
 import net.coobird.thumbnailator.geometry.Positions;
 
@@ -21,31 +20,25 @@ public class ImageUtil {
 	private static final SimpleDateFormat sDateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
 	private static final Random r = new Random();
 
-	// Logger logger = LoggerFactory.getLogger(ImageUtil.class);
+	static Logger logger = LoggerFactory.getLogger(ImageUtil.class);
 
 	public static String generateThumbnail(InputStream thumbnailInputStream, String fileName, String targetAddr) {
-		Logger logger = LoggerFactory.getLogger(ImageUtil.class);
-		// 随机名
+
 		String realFileName = getRandomFileName();
-		// 扩展名
 		String extension = getFileExtension(fileName);
-		// 生成路径
 		makeDirPath(targetAddr);
-		// 相对路径
 		String relativeAddr = targetAddr + realFileName + extension;
-
-		logger.debug("relativeAddr：" + relativeAddr);
-		// 新文件
-		File dest = new File(PathUtil.getImageBasePath() + relativeAddr);
-
-		logger.debug("completeAddr：" + PathUtil.getImageBasePath() + relativeAddr);
+		logger.debug("crrent relativeAddr:" + relativeAddr);
+		File dest = new File(PathUtil.getImgBasePath() + relativeAddr);
+		logger.debug("dest name:" + PathUtil.getImgBasePath() + relativeAddr);
 
 		try {
+			logger.debug("water IMG:" + basePath + "watermark.jpg");
+
 			Thumbnails.of(thumbnailInputStream).size(200, 200)
-					.watermark(Positions.BOTTOM_RIGHT, ImageIO.read(new File(basePath + "/watermark.jpg")), 0.25f)
+					.watermark(Positions.BOTTOM_RIGHT, ImageIO.read(new File(basePath + "watermark.jpg")), 0.25f)
 					.outputQuality(0.8f).toFile(dest);
 		} catch (IOException e) {
-			logger.error(e.toString());
 			e.printStackTrace();
 		}
 		return relativeAddr;
@@ -53,33 +46,7 @@ public class ImageUtil {
 	}
 
 	/**
-	 * 创建目标路径所涉及的目录
-	 * 
-	 * @param targetAddr
-	 */
-	private static void makeDirPath(String targetAddr) {
-		String realFileParentPath = PathUtil.getImageBasePath() + targetAddr;
-		File dirPath = new File(realFileParentPath);
-		if (!dirPath.exists()) {
-			dirPath.mkdirs();
-		}
-	}
-
-	/**
-	 * 获取扩展名get
-	 * 
-	 * @param thumbnail
-	 * @return
-	 */
-	private static String getFileExtension(String fileName) {
-
-		return fileName.substring(fileName.lastIndexOf("."));
-	}
-
-	/**
 	 * 随机文件名
-	 * 
-	 * @return
 	 */
 	public static String getRandomFileName() {
 		int rannum = r.nextInt(89999) + 10000;
@@ -87,12 +54,42 @@ public class ImageUtil {
 		return nowTimeStr + rannum;
 	}
 
-//	public static void main(String[] args) throws IOException {
-//
-//		Thumbnails.of(new File("D:\\\\TMP\\1024.jpg")).size(800, 800)
-//				.watermark(Positions.BOTTOM_RIGHT, ImageIO.read(new File(basePath + "/watermark.jpg")), 0.25f)
-//				.outputQuality(0.8f).toFile("D:\\\\TMP\\1024_1.jpg");
-//
-//	}
+	/**
+	 * 获取扩展名get
+	 */
+	private static String getFileExtension(String fileName) {
+
+		return fileName.substring(fileName.lastIndexOf("."));
+	}
+
+	/**
+	 * 创建目标路径所涉及的目录
+	 */
+	private static void makeDirPath(String targetAddr) {
+		String realFileParentPath = PathUtil.getImgBasePath() + targetAddr;
+		File dirPath = new File(realFileParentPath);
+		if (!dirPath.exists()) {
+			dirPath.mkdirs();
+		}
+	}
+
+	/**
+	 * 文件删除
+	 */
+	public static void deleteFileOrOath(String storePath) {
+		File fileOrPath = new File(PathUtil.getImgBasePath() + storePath);
+		logger.debug("删除的地址：" + fileOrPath);
+		if (fileOrPath.exists()) {
+			logger.debug("存在");
+			if (fileOrPath.isDirectory()) {
+				File files[] = fileOrPath.listFiles();
+				for (int i = 0; i < files.length; i++) {
+					files[i].delete();
+				}
+			}
+			fileOrPath.delete();
+		}
+
+	}
 
 }

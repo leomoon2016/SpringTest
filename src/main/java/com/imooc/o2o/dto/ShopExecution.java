@@ -2,7 +2,7 @@ package com.imooc.o2o.dto;
 
 import java.util.List;
 
-import com.imooc.o2o.enerty.Shop;
+import com.imooc.o2o.entity.Shop;
 import com.imooc.o2o.enums.ShopStateEnum;
 
 public class ShopExecution {
@@ -74,6 +74,10 @@ public class ShopExecution {
 		this.state = stateEnum.getState();
 		this.stateInfo = stateEnum.getStateInfo();
 		this.shopList = shopList;
+	}
+
+	public ShopExecution() {
+		// TODO Auto-generated constructor stub
 	}
 
 }

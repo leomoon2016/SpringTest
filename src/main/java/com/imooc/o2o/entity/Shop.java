@@ -17,7 +17,7 @@ public class Shop {
 	private Integer enableStatus;
 	private String advice;
 	private Area area;
-	private PersonInfo personInfo;
+	private PersonInfo owner;
 	private ShopCategory shopCategory;
 
 	public Long getShopId() {
@@ -116,16 +116,16 @@ public class Shop {
 		this.area = area;
 	}
 
-	public PersonInfo getPersonInfo() {
-		return personInfo;
-	}
-
-	public void setPersonInfo(PersonInfo personInfo) {
-		this.personInfo = personInfo;
-	}
-
 	public ShopCategory getShopCategory() {
 		return shopCategory;
+	}
+
+	public PersonInfo getOwner() {
+		return owner;
+	}
+
+	public void setOwner(PersonInfo owner) {
+		this.owner = owner;
 	}
 
 	public void setShopCategory(ShopCategory shopCategory) {

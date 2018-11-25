@@ -3,6 +3,7 @@ package com.imooc.o2o.dao;
 import static org.junit.Assert.assertEquals;
 
 import java.util.Date;
+import java.util.List;
 
 import org.junit.Ignore;
 import org.junit.Test;
@@ -11,10 +12,10 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.imooc.o2o.BaseTest;
-import com.imooc.o2o.enerty.Area;
-import com.imooc.o2o.enerty.PersonInfo;
-import com.imooc.o2o.enerty.Shop;
-import com.imooc.o2o.enerty.ShopCategory;
+import com.imooc.o2o.entity.Area;
+import com.imooc.o2o.entity.PersonInfo;
+import com.imooc.o2o.entity.Shop;
+import com.imooc.o2o.entity.ShopCategory;
 
 public class ShopDaoTest extends BaseTest {
 	@Autowired
@@ -22,7 +23,35 @@ public class ShopDaoTest extends BaseTest {
 	Logger logger = LoggerFactory.getLogger(ShopDaoTest.class);
 
 	@Test
-	// @Ignore
+	public void testQueryShopList() {
+		Shop shopCondition = new Shop();
+		
+		PersonInfo owner = new PersonInfo();
+		owner.setUserId(1L);
+		
+		ShopCategory shopCategory=new ShopCategory();
+		shopCategory.setShopCategoryId(1L);
+		
+		shopCondition.setShopCategory(shopCategory);
+		shopCondition.setOwner(owner);
+		List<Shop> shopList = shopDao.queryShopList(shopCondition, 0, 5);
+		System.out.println("行数：" + shopList.size());
+		int count = shopDao.queryShopCount(shopCondition);
+		System.out.println("总数：" + count);
+
+	}
+
+	@Test
+	@Ignore
+	public void testQueryByShopId() {
+		long shopId = 1;
+		Shop shop = shopDao.queryByShopId(shopId);
+		System.out.println(shop.getArea().getAreaId());
+		System.out.println(shop.getArea().getAreaName());
+	}
+
+	@Test
+	@Ignore
 	public void testInsertShop() {
 
 		Shop shop = new Shop();
