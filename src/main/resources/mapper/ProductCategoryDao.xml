@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.imooc.o2o.dao.ProductCategoryDao">
+	<select id="queryProductCategoryList" resultType="com.imooc.o2o.entity.ProductCategory" parameterType="Long">
+		select
+		t.product_category_id,
+		t.product_category_name,
+		t.priority,
+		t.create_time,
+		t.last_edit_time,
+		t.shop_id
+		from
+		tb_product_category t
+		where t.shop_id=#{shopId}
+		ORDER BY t.priority DESC
+	</select>
+</mapper>

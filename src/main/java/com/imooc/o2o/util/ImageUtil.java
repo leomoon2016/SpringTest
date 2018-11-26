@@ -36,7 +36,7 @@ public class ImageUtil {
 			logger.debug("water IMG:" + basePath + "watermark.jpg");
 
 			Thumbnails.of(thumbnailInputStream).size(200, 200)
-					.watermark(Positions.BOTTOM_RIGHT, ImageIO.read(new File(basePath + "watermark.jpg")), 0.25f)
+					.watermark(Positions.BOTTOM_RIGHT, ImageIO.read(new File(basePath + "watermark.jpg")), 0.5f)
 					.outputQuality(0.8f).toFile(dest);
 		} catch (IOException e) {
 			e.printStackTrace();
